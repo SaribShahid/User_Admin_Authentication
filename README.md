@@ -90,7 +90,9 @@ Each role has controlled access to specific API endpoints. Access is enforced us
   "verificationToken": "string",
   "__v": 0
 }
-Activity Log Collection
+```
+### ctivity Logs Collection
+```json
 {
   "_id": "ObjectId",
   "userId": "ObjectId (reference to User)",
@@ -100,6 +102,7 @@ Activity Log Collection
   "timestamp": "ISODate",
   "__v": 0
 }
+```
 ## Middleware Flow
 
 Request → Authentication Middleware → Role Authorization Middleware → Route Handler → Response
@@ -112,15 +115,15 @@ Request → Authentication Middleware → Role Authorization Middleware → Rout
 
 ## Project Structure
 
-```text id="proj1"
+```text
 /controllers
 /middlewares
 /models
 /routes
 /config
 /utils
-server.js
-
+/server.js
+```
 ## Security Highlights
 
 - JWT-based authentication (Access and Refresh Tokens)  
@@ -167,5 +170,4 @@ server.js
 ## Author
 
 Sarib Shahid  
-Backend Developer | Node.js | Express.js | MongoDB | JWT Systems
 Backend Developer | Node.js | Express.js | MongoDB | JWT Systems
