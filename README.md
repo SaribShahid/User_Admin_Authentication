@@ -91,7 +91,7 @@ Each role has controlled access to specific API endpoints. Access is enforced us
   "__v": 0
 }
 ```
-### ctivity Logs Collection
+### Activity Logs Collection
 ```json
 {
   "_id": "ObjectId",
