@@ -100,14 +100,19 @@ Activity Log Collection
   "timestamp": "ISODate",
   "__v": 0
 }
-Middleware Flow
+## Middleware Flow
 
 Request → Authentication Middleware → Role Authorization Middleware → Route Handler → Response
 
-Authentication Middleware: Verifies JWT token
-Authorization Middleware: Checks user role permissions
-Route Handler: Executes protected business logic
-Project Structure
+- Authentication Middleware: Verifies JWT token  
+- Authorization Middleware: Checks user role permissions  
+- Route Handler: Executes protected business logic  
+
+---
+
+## Project Structure
+
+```text id="proj1"
 /controllers
 /middlewares
 /models
@@ -115,34 +120,52 @@ Project Structure
 /config
 /utils
 server.js
-Security Highlights
-JWT-based authentication (Access + Refresh Tokens)
-bcrypt password hashing for secure storage
-Refresh token rotation for session security
-IP tracking for audit logs
-Role-based route protection
-Middleware-first architecture
-API Security Flow
-User logs in and receives JWT tokens
-Access token is used for API requests
-Middleware verifies token validity
-Role middleware checks permissions
-Request is allowed or denied based on role
-Project Timeline
-System Design and ERD Planning
-Database Schema Design
-Backend API Development
-Authentication and JWT Implementation
-Role-Based Access Control Integration
-Testing and Debugging
-Completed in 6 Weeks
-Project Outcome
-Production-style backend authentication system
-Secure and scalable RBAC architecture
-Clean modular code structure
-Industry-level security implementation
-Fully functional REST API backend
-Author
 
-Sarib Shahid
+## Security Highlights
+
+- JWT-based authentication (Access and Refresh Tokens)  
+- bcrypt password hashing for secure storage  
+- Refresh token rotation for session security  
+- IP tracking for audit logs  
+- Role-based route protection  
+- Middleware-first architecture  
+
+---
+
+## API Security Flow
+
+- User logs in and receives JWT tokens  
+- Access token is used for API requests  
+- Middleware verifies token validity  
+- Role middleware checks permissions  
+- Request is allowed or denied based on role  
+
+---
+
+## Project Timeline
+
+- System Design and ERD Planning  
+- Database Schema Design  
+- Backend API Development  
+- Authentication and JWT Implementation  
+- Role-Based Access Control Integration  
+- Testing and Debugging  
+- Completed in 6 Weeks  
+
+---
+
+## Project Outcome
+
+- Production-style backend authentication system  
+- Secure and scalable RBAC architecture  
+- Clean modular code structure  
+- Industry-level security implementation  
+- Fully functional REST API backend  
+
+---
+
+## Author
+
+Sarib Shahid  
+Backend Developer | Node.js | Express.js | MongoDB | JWT Systems
 Backend Developer | Node.js | Express.js | MongoDB | JWT Systems
